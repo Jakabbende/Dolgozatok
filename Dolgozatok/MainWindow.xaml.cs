@@ -45,7 +45,15 @@ namespace Dolgozatok
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            nev = nevtxt.Text;
+            eletkor = int.Parse(eletkortxt.Text);
+            pontszam = int.Parse(ponttxt.Text);
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

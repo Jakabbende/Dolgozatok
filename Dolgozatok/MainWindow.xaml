@@ -20,7 +20,7 @@
             <Label Content="Pontszám: "/>
             <TextBlock x:Name="ponttxt" Width="30"/>
             <Button Content="Hozzáadás" Width="100" Click="Button_Click"/>
-            <Button Content="Mentes" Width="100"/>
+            <Button Content="Mentes" Width="100" Click="Button_Click_1"/>
         </WrapPanel>
     </Grid>
 </Window>

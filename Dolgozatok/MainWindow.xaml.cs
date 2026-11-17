@@ -41,6 +41,7 @@ namespace Dolgozatok
             InitializeComponent();
             Ember test1 = new Ember("Kiss József", 15, 10);
             emberek.Add(test1);
+            dolgozatdatagrid.ItemsSource = emberek;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -53,7 +54,10 @@ namespace Dolgozatok
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Ember hozzaadas = new Ember(nev, eletkor, pontszam);
+            emberek.Add(hozzaadas);
+            MessageBox.Show("Sikeres hozzáadás a listához");
+            dolgozatdatagrid.Items.Refresh();
         }
     }
 }

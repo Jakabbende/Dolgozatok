@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dolgozatok"
         mc:Ignorable="d"
-        Title="Dolgozatok" Height="300" Width="450">
+        Title="Dolgozatok" Height="300" Width="400">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
         <DataGrid x:Name="dolgozatdatagrid" Grid.Row="0"/>
-        <WrapPanel Grid.Row="1">
+        <WrapPanel Grid.Row="1" Margin="10">
             <Label Content="Név: "/>
             <TextBlock x:Name="nevtxt" Width="100"/>
             <Label Content="Életkor: "/>
             <TextBlock x:Name="eletkortxt" Width="40"/>
             <Label Content="Pontszám: "/>
             <TextBlock x:Name="ponttxt" Width="30"/>
-            <Button Content="Hozzáadás" Width="100"/>
+            <Button Content="Hozzáadás" Width="100" Click="Button_Click"/>
             <Button Content="Mentes" Width="100"/>
         </WrapPanel>
     </Grid>
